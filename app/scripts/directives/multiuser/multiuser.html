@@ -1,0 +1,8 @@
+<li>
+    <div class="well-lg multiuser" ng-show="{{$root.multiuser}}">
+		<img src="#" href="groupzname.memberdetails.profileurl" /> 
+		<select class="form-control" id="selecteduser"
+			ng-model="groupzname"
+			ng-options='groupzname as (groupzname.groupzdetails.groupzname + " - " + groupzname.groupzdetails.groupzcode) for groupzname in multiuser' ng-change="GetSelectedGroupzCode(groupzname)"></select>
+	</div>
+</li>

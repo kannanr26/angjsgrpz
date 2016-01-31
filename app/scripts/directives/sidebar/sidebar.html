@@ -1,0 +1,122 @@
+    <div class="navbar-default sidebar sidebar-menu" role="navigation">  
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav in" id="side-menu">
+             
+              <multiuser></multiuser>
+			<li ui-sref-active="active" >
+
+                <a ui-sref="dashboard.chart"><i class="fa fa-bar-chart-o fa-fw"></i> Dashboard<span></span></a>
+            </li>
+			<li ui-sref-active="active" >
+                <a ui-sref="dashboard.profile"><i class="fa fa-dashboard fa-fw"></i> Profile</a>
+            </li>
+           
+            <li ui-sref-active="active">
+                <a ui-sref="dashboard.account"><i class="fa fa-table fa-fw"></i> Account</a>
+            </li>
+            <li ng-class="{active: collapseVar==1}" ng-show="{{$root.selecteduser.groupzPremission.emailenabled ||  $root.selecteduser.groupzPremission.smsEnable}}">{{dropDown}} 
+                <a href="" ng-click="check(1)"><i class="fa fa-wrench fa-fw"></i> Mailbox<span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=1" ng-show="{{$root.selecteduser.memberPremission.sendmessages}}">
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.sms">Email/SMS</a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="dashboard.ivr">IVR</a>
+                    </li>
+                </ul>
+                
+            </li>
+
+            <li ui-sref-active="active" ng-show="{{$root.selecteduser.groupzPremission.plannerenabled}}">
+                <a ui-sref="dashboard.planner"><i class="fa fa-table fa-fw"></i> {{$root.selecteduser.groupzPremission.plannerlabel}}</a>
+            </li>
+            <li ng-class="{active: collapseVar==2}">{{dropDown}}
+                    <a href="" ng-click="check(2)"><i class="fa fa-wrench fa-fw"></i> Dropbox<span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=2" > 
+                    <li ui-sref-active="active" ng-show="{{$root.selecteduser.groupzPremission.albumsenabled}}">
+                        <a ui-sref="dashboard.album">{{$root.selecteduser.groupzPremission.albumlabel}}</a>
+                    </li>
+                   
+                    <li ui-sref-active="active" ng-show="{{$root.selecteduser.groupzPremission.documentssharingenabled}}">
+                        <a ui-sref="dashboard.document">{{$root.selecteduser.groupzPremission.documentslabel}}</a>
+                    </li>
+                     <li ui-sref-active="active" ng-show="{{$root.selecteduser.groupzPremission.announcementsenabled}}">
+                        <a ui-sref="dashboard.announcement">{{$rootselecteduser.groupzPremission.announcementlabel}}</a>
+                    </li>
+                </ul>
+                
+            </li>
+
+
+<li ng-class="{active: collapseVar==3}">{{dropDown}}
+                    <a href="" ng-click="check(3)"><i class="fa fa-wrench fa-fw"></i> Checklist<span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=3" > 
+                    <li ui-sref-active="active" ng-show="{{$root.selecteduser.groupzPremission.surveysenabled}}">
+                        <a ui-sref="dashboard.album">{{$root.selecteduser.groupzPremission.surveylabel}}</a>
+                    </li>
+                   
+                    <li ui-sref-active="active" ng-show="{{$root.selecteduser.groupzPremission.enableattendance}}">
+                        <a ui-sref="dashboard.document">Attendance</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+
+
+<li ui-sref-active="active" >
+                <a ui-sref="dashboard.report"><i class="fa fa-table fa-fw"></i>Report</a>
+            </li>
+            
+
+            <li ui-sref-active="active" >
+                <a ui-sref="dashboard.setting"><i class="fa fa-table fa-fw"></i> Settings</a>
+            </li>
+            
+
+            <li ui-sref-active="active" >
+                <a ui-sref="dashboard.help"><i class="fa fa-table fa-fw"></i> Help</a>
+            </li>
+            
+           <!--  <li ng-class="{active: collapseVar==2}">
+                <a href="" ng-click="check(2)"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span
+                        class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" collapse="collapseVar!=2">
+                    <li>
+                        <a href="">Second Level Item</a>
+                    </li>
+                    <li>
+                        <a href="">Second Level Item</a>
+                    </li>
+                    <li ng-init="third=!third" ng-class="{active: multiCollapseVar==3}">
+                        <a href="" ng-click="multiCheck(3)">Third Level <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level" collapse="multiCollapseVar!=3">
+                            <li>
+                                <a href="">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="">Third Level Item</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                
+            </li> -->
+            
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div> 
+
+
+

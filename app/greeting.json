@@ -1,0 +1,30 @@
+{
+  "json": {
+    "response": {
+      "servicetype": "21",
+      "functiontype": "2021",
+      "statuscode": "0",
+      "statusmessage": "Success",
+      "greetings": [
+        {
+          "name": "Sunderasan",
+          "memberid": 845,
+          "groupzcode": "SN",
+          "role": "GBROLE",
+          "division": "A",
+          "subdivision": "B1",
+          "profileurl": "http://localhost/GroupzMobileApp/ProfilePhoto/1163"
+        },
+        {
+          "name": "Chandru",
+          "memberid": 885,
+          "groupzcode": "NSN",
+          "role": "GBROLE",
+          "division": "A",
+          "subdivision": "A4",
+          "profileurl": "http://localhost/GroupzMobileApp/ProfilePhoto/1211"
+        }
+      ]
+    }
+  }
+}
